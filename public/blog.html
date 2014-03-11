@@ -7,7 +7,7 @@
             <span ng-repeat="item in feed.entries" ng-animate="'animate'">
                 <a class="h4" href="{{item.link}}" target="_blank">{{item.title}}</a>
                 </br>
-                <span>{{item.contentSnippet}}</span>
+                <span ng-bind-html="item.contentSnippet"></span>
                 <br/>
             </span>
         </p>

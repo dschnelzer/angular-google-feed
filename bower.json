@@ -1,9 +1,10 @@
 {
-  "name": "google-feed-example",
-  "dependencies": {
-    "angular": "1.2.9",
-    "angular-route": "1.2.9",
-    "angular-resource": "1.2.9",
-    "angular-ui-bootstrap-bower": "latest"
-  }
+    "name": "google-feed-example",
+    "dependencies": {
+        "angular": "1.2.9",
+        "angular-route": "1.2.9",
+        "angular-resource": "1.2.9",
+        "angular-sanitize": "latest",
+        "angular-ui-bootstrap-bower": "latest"
+    }
 }
