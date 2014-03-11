@@ -12,16 +12,13 @@ module.factory('FeedLoader', function ($resource) {
     });
 });
 
-
 module.service('BlogList', function ($rootScope, FeedLoader) {
     var feeds = [];
     console.log("loading feeds...");
     this.get = function() {
         var feedSources = [
-            {title: 'yoga', url: 'http://feeds.mashable.com/Mashable'}
-
+            {title: 'Mashable', url: 'http://feeds.mashable.com/Mashable'}
         ];
-
         if (feeds.length === 0) {
             for (var i=0; i<feedSources.length; i++) {
                 FeedLoader.fetch({q: feedSources[i].url, num: 10}, {}, function (data) {
