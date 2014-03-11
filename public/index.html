@@ -1,0 +1,24 @@
+<html ng-app="myApp">
+<head>
+    <title>Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+</head>
+<body>
+<h1>Welcome {{name}}!</h1>
+<input placeholder="type your name..." ng-model="name"/>
+<br/><br/><br/>
+<h2>Importing a Blog Feed Example</h2>
+
+<div ng-view></div>
+
+</body>
+<script src="js/lib/angular/angular.min.js"></script>
+<script src="js/lib/angular-resource/angular-resource.js"></script>
+<script src="js/lib/angular-route//angular-route.js"></script>
+
+<script src="js/app/app.js"></script>
+<script src="js/app/services/blog_services.js"></script>
+<script src="js/app/controllers/controllers.js"></script>
+
+</html>

@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="well" style="margin-top: 30px; width: 30%; overflow: scroll; height: 100%;"
+         ng-repeat="feed in feeds | orderBy:'title'" ng-animate="'animate'">
+        <h2>{{feed.title}}</h2>
+
+        <p>
+            <span ng-repeat="item in feed.entries" ng-animate="'animate'">
+                <a class="h4" href="{{item.link}}" target="_blank">{{item.title}}</a>
+                </br>
+                <span>{{item.contentSnippet}}</span>
+                <br/>
+            </span>
+        </p>
+    </div>
+</div>
