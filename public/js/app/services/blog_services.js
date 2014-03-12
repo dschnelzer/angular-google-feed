@@ -17,7 +17,8 @@ module.service('BlogList', function ($rootScope, FeedLoader) {
     console.log("loading feeds...");
     this.get = function() {
         var feedSources = [
-            {title: 'Mashable', url: 'http://feeds.mashable.com/Mashable'}
+            {title: 'Mashable', url: 'http://feeds.mashable.com/Mashable'},
+            {title: 'TechCrunch', url: 'http://feeds.feedburner.com/TechCrunch/'}
         ];
         if (feeds.length === 0) {
             for (var i=0; i<feedSources.length; i++) {
